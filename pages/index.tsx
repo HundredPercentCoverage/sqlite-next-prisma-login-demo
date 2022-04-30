@@ -34,8 +34,9 @@ const Home = () => {
         : result.message;
 
       setError(error);
-      setIsLoading(false);
     }
+    
+    setIsLoading(false);
   };
 
   const login = async (e: FormEvent<HTMLFormElement>) => {
