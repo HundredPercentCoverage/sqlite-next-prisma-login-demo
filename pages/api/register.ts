@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         }
       });
   
-      res.status(200).json({ user: result });
+      res.status(200).json({ message: `Registered ${result.username} OK` });
     } catch (e) {
       res.status(500).send({ message: (e as Error).message });
     }
